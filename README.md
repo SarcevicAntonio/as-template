@@ -1,20 +1,9 @@
-# create-svelte
+# SvelteKit Library Pacakge Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+IMO some things in the default template are mssing for using sveltekits awesome package feature to publish a library with docs and demo (and tests at some point maybe?)
 
-## Creating a project
+I've this based on `create-svelte` (i.e. `npm init svelte@next`) with TS, ES Lint and Prettier plus the `npm run package` script, mdsvex for stupidly simple markdown docs and 
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
 
 ## Developing
 
@@ -27,12 +16,21 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+* Use `src/lib/` for the package itself and `index.ts` for the entrypoint
+* Use `src/routes/` for docs, demos (and tests?)
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+## Building / Packaging
+
+Before creating a production version of your lib, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
 ```bash
-npm run build
+npm run package
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+> You can preview the docs with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+ # To publish it to npm:
+```
+cd package
+npm publish
+``` 
