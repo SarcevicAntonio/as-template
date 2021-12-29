@@ -2,7 +2,7 @@
 
 IMO some things in the default template are mssing for using sveltekits awesome package feature to publish a library with docs and demo (and tests at some point maybe?)
 
-I've this based on `create-svelte` (i.e. `npm init svelte@next`) with TS, ES Lint and Prettier plus the `npm run package` script, mdsvex for stupidly simple markdown docs and 
+I've this based on `create-svelte` (i.e. `npm init svelte@next`) with TS, ES Lint and Prettier plus the `npm run package` script, mdsvex for stupidly simple markdown docs and a `Build and Deploy Lib and Docs` GitHub workflow
 
 
 ## Developing
