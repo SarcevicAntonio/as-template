@@ -1,8 +1,8 @@
-# SvelteKit Library Pacakge Template
+# SvelteKit Library Package Template
 
-IMO some things in the default template are mssing for using sveltekits awesome package feature to publish a library with docs and demo (and tests at some point maybe?)
+IMO some things in the default template are missing for using sveltekits awesome package feature to publish a library with docs and demo (and tests at some point maybe?)
 
-I've this based on `create-svelte` (i.e. `npm init svelte@next`) with TS, ES Lint and Prettier plus the `npm run package` script, mdsvex for stupidly simple markdown docs and a `Build and Deploy Lib and Docs` GitHub workflow
+I've this based on `create-svelte` (i.e. `npm init svelte@next`) with TS, ES Lint and Prettier plus the `npm run package` script, mdsvex for stupidly simple Markdown docs and a `Build and Deploy Lib and Docs` GitHub workflow
 
 
 ## Developing
@@ -16,7 +16,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-* Use `src/lib/` for the package itself and `index.ts` for the entrypoint
+* Use `src/lib/` for the package itself and `index.ts` for the entry point
 * Use `src/routes/` for docs, demos (and tests?)
 
 ## Building / Packaging
